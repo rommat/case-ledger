@@ -3,4 +3,4 @@ from django.http import HttpRequest, HttpResponse
 
 
 def main(request: HttpRequest) -> HttpResponse:
-    return HttpResponse('<h1>ГОЛОВНА СТОРІНКА</h1>')
+    return render(request, 'main/main.html')
